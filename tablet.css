@@ -1,17 +1,17 @@
 @media (max-width: 1300px) {
   .background {
-    padding: 70px;
+    padding: 50px;
     padding-bottom: 100px;
   }
   .title {
-    margin-left: 70px;
+    margin-left: 20px;
     font-size: 2.7rem;
   }
   .subtitle {
-    margin-left: 70px;
+    margin-left: 20px;
   }
   .c1 p {
-    margin: 0 70px 0 70px;
+    margin: 0 20px 0 20px;
   }
   .c2 img {
     width: 70%;

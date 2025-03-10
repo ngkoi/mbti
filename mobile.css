@@ -1,17 +1,25 @@
-@media (max-width: 850px) {
+@media (max-width: 500px) {
   .background {
     padding: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
+    row-gap: 50px;
+    height: 30vh;
   }
   .title {
     margin-left: 20px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .subtitle {
     margin-left: 20px;
+    font-size: 0.7rem;
   }
+
   .c1 p {
     margin: 0 20px 0 20px;
+    font-size: 0.7rem;
+  }
+  .btn p {
+    font-size: 0.7rem;
   }
   .c2 img {
     width: 100%;
@@ -39,6 +47,9 @@
     gap: 50px;
   }
   .inftt {
-    font-size: 1.6rem;
+    font-size: 1rem;
+  }
+  .infttsub {
+    font-size: 1rem;
   }
 }
