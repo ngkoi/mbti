@@ -1,9 +1,9 @@
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .background {
     padding: 20px;
     padding-bottom: 200px;
-    row-gap: 50px;
-    height: 30vh;
+    row-gap: 30px;
+    height: 45vh;
   }
   .title {
     margin-left: 20px;
@@ -26,7 +26,7 @@
   }
   .btn {
     margin-left: 20px;
-    margin-right: 100px;
+    margin-right: 0;
   }
   footer {
     padding-top: 30px;
