@@ -1,0 +1,24 @@
+@media (max-width: 550px) {
+  * {
+    font-size: 1.3rem;
+  }
+  .q-h {
+    font-size: 0.7rem;
+    background-color: #fed966;
+    border-radius: 20px;
+    padding: 20px 20px 1px 20px;
+    margin-bottom: 10px;
+  }
+  .a-ctn button p {
+    display: inline-block;
+    margin: 0;
+    font-size: 0.6rem;
+  }
+  .a-ctn button p b {
+    font-size: 0.6rem;
+  }
+  .eochibiti {
+    left: 35%;
+    top: -50%;
+  }
+}

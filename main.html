@@ -3,9 +3,458 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/main-tablet.css" rel="stylesheet" />
+    <link href="css/main-mobile.css" rel="stylesheet" />
+    <link href="css/font.css" rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>MBTI</title>
   </head>
   <body>
-    <h1>M gay</h1>
+    <div class="overlay-blur"></div>
+
+    <div class="ovl none">
+      <div class="ovl-t">
+        <h1>Trước khi thực hiện bài trắc nghiệm</h1>
+      </div>
+      <div class="ovl-c">
+        <ul>
+          <li>
+            Bài trắc nghiệm MBTI không có câu trả lời <b>Đúng</b> hay
+            <b>Sai</b>.
+          </li>
+          <li>
+            Hãy dành thời gian ra để suy nghĩ và trả lời thật lòng để có kết quả
+            chính xác nhất.
+          </li>
+        </ul>
+        <button class="btn-cfm">OK</button>
+      </div>
+    </div>
+    <div class="b-content">
+      <div class="q-ctn">
+        <!-- Q1 -->
+        <div class="q1 q-c">
+          <div class="q-h">
+            <h1><b>1</b></h1>
+            <p><b>Trong một buổi gặp mặt có nhiều người, bạn thường?</b></p>
+          </div>
+          <div class="a-ctn">
+            <button id="q1-1" class="q-a">
+              <p>Mạnh dạn nói chuyện với những người xa lạ.</p>
+            </button>
+            <button id="q1-2" class="q-a">
+              <p>
+                Rụt rè, không dám bắt chuyện với những người mình không quen.
+              </p>
+            </button>
+          </div>
+        </div>
+        <!-- Q2 -->
+        <div class="q2 q-c">
+          <div class="q-h">
+            <h1><b>2</b></h1>
+            <p><b>Khi làm một việc gì đó, bạn hay...</b></p>
+          </div>
+          <div class="a-ctn">
+            <button id="q2-1" class="q-a">
+              <p>Làm trước sau đó mới suy nghĩ lại về hành động của mình .</p>
+            </button>
+            <button id="q2-2" class="q-a">
+              <p>Luôn suy nghĩ trước khi hành động.</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q3 -->
+        <div class="q3 q-c">
+          <div class="q-h">
+            <h1><b>3</b></h1>
+            <p><b>Bạn thích mình là...</b></p>
+          </div>
+          <div class="a-ctn">
+            <button id="q3-1" class="q-a">
+              <p>Tâm điểm của công chúng.</p>
+            </button>
+            <button id="q3-2" class="q-a">
+              <p>Ngồi âm thầm đằng sau hậu trường.</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q4 -->
+        <div class="q4 q-c">
+          <div class="q-h">
+            <h1><b>4</b></h1>
+            <p><b>Bạn thích làm việc...</b></p>
+          </div>
+          <div class="a-ctn">
+            <button id="q4-1" class="q-a">
+              <p>Trong một môi trường đông vui.</p>
+            </button>
+            <button id="q4-2" class="q-a">
+              <p>Ngồi độc lập một mình.</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q5 -->
+        <div class="q5 q-c">
+          <div class="q-h">
+            <h1><b>5</b></h1>
+            <p><b>Khi ở một mình, bạn cảm thấy</b></p>
+          </div>
+          <div class="a-ctn">
+            <button id="q5-1" class="q-a">
+              <p>Buồn chán.</p>
+            </button>
+            <button id="q5-2" class="q-a">
+              <p>Bình thường.</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q6 -->
+        <div class="q6 q-c">
+          <div class="q-h">
+            <h1><b>6</b></h1>
+            <p><b>Khi đưa ra một quyết định,</b></p>
+          </div>
+          <div class="a-ctn">
+            <button id="q6-1" class="q-a">
+              <p>
+                Bạn có suy nghĩ kỹ càng theo các nguyên tắc logic và dựa trên
+                các dữ kiện.
+              </p>
+            </button>
+            <button id="q6-2" class="q-a">
+              <p>Bạn quan tâm đến cảm xúc của người xung quanh.</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q7 -->
+        <div class="q7 q-c">
+          <div class="q-h">
+            <h1><b>7</b></h1>
+            <p>
+              <b
+                >Mọi người thường nhìn nhận bạn như một người khách quan công
+                bằng</b
+              >
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q7-1" class="q-a">
+              <p>Đúng</p>
+            </button>
+            <button id="q7-2" class="q-a">
+              <p>Sai</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q8 -->
+        <div class="q8 q-c">
+          <div class="q-h">
+            <h1><b>8</b></h1>
+            <p>
+              <b>Khi cho rằng cái gì đó là sự thật, bạn sẽ</b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q8-1" class="q-a">
+              <p>
+                Nói thẳng ra mà không quan tâm nhiều đến việc hành động đó có
+                thể ảnh hưởng đến mối quan hệ giữa bạn và những người khác
+              </p>
+            </button>
+            <button id="q8-2" class="q-a">
+              <p>
+                Cân nhắc kỹ lưỡng trước khi nói ra, đảm bảo rằng lời nói của bạn
+                không gây tổn thương hay hiểu lầm.
+              </p>
+            </button>
+          </div>
+        </div>
+        <!-- Q9 -->
+        <div class="q9 q-c">
+          <div class="q-h">
+            <h1><b>9</b></h1>
+            <p>
+              <b></b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q9-1" class="q-a">
+              <p>
+                Bạn yêu thích thảo luận và tranh luận về các chủ đề dù rằng đôi
+                khi những tranh luận này có thể trở nên gay gắt và căng thẳng.
+              </p>
+            </button>
+            <button id="q9-2" class="q-a">
+              <p>
+                Bạn thích giữ hòa khí và tránh tranh luận, thường ưu tiên sự
+                đồng thuận hơn là đối đầu trong các cuộc thảo luận.
+              </p>
+            </button>
+          </div>
+        </div>
+        <!-- Q10 -->
+        <div class="q10 q-c">
+          <div class="q-h">
+            <h1><b>10</b></h1>
+            <p>
+              <b></b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q10-1" class="q-a">
+              <p>Mọi người nghĩ rằng bạn là người khép kín.</p>
+            </button>
+            <button id="q10-2" class="q-a">
+              <p>Mọi người nghĩ rằng bạn là người cởi mở và dễ gần.</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q11 -->
+        <div class="q11 q-c">
+          <div class="q-h">
+            <h1><b>11</b></h1>
+            <p>
+              <b></b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q11-1" class="q-a">
+              <p>
+                Bạn thích để ý và ghi nhớ nhiều thông tin chi tiết từ các sự
+                kiện bên ngoài
+              </p>
+            </button>
+            <button id="q11-2" class="q-a">
+              <p>
+                Bạn thường không quá chú ý đến những chi tiết nhỏ từ các sự kiện
+                bên ngoài mà thay vào đó tập trung vào tổng thể.
+              </p>
+            </button>
+          </div>
+        </div>
+        <!-- Q12 -->
+        <div class="q12 q-c">
+          <div class="q-h">
+            <h1><b>12</b></h1>
+            <p>
+              <b></b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q12-1" class="q-a">
+              <p>
+                Bạn không hay nghĩ đến tương lai, chỉ tập trung chính vào việc
+                tận hưởng hiện tại.
+              </p>
+            </button>
+            <button id="q12-2" class="q-a">
+              <p>
+                Bạn thường suy nghĩ về tương lai và lên kế hoạch cho những gì sẽ
+                xảy ra.
+              </p>
+            </button>
+          </div>
+        </div>
+        <!-- Q13 -->
+        <div class="q13 q-c">
+          <div class="q-h">
+            <h1><b>13</b></h1>
+            <p>
+              <b>Bạn thích...</b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q13-1" class="q-a">
+              <p>
+                Những giải pháp <b>cụ thể</b> và <b>thực tế</b> cho các vấn đề
+                mà bạn đang gặp phải.
+              </p>
+            </button>
+            <button id="q13-2" class="q-a">
+              <p>
+                Những giải pháp <b>sáng tạo</b> cho các vấn đề mà bạn đang gặp
+                phải.
+              </p>
+            </button>
+          </div>
+        </div>
+        <!-- Q14 -->
+        <div class="q14 q-c">
+          <div class="q-h">
+            <h1><b>14</b></h1>
+            <p>
+              <b>Bạn thích...</b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q14-1" class="q-a">
+              <p>Kinh nghiệm và thực tiễn.</p>
+            </button>
+            <button id="q14-2" class="q-a">
+              <p>Trí tưởng tượng và sự sáng tạo.</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q15 -->
+        <div class="q15 q-c">
+          <div class="q-h">
+            <h1><b>15</b></h1>
+            <p>
+              <b>Bạn có xu hướng suy nghĩ theo dạng như:</b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q15-1" class="q-a">
+              <p>"Nó là cái gì?"</p>
+            </button>
+            <button id="q15-2" class="q-a">
+              <p>"Nó có thể là cái gì?"</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q16 -->
+        <div class="q16 q-c">
+          <div class="q-h">
+            <h1><b>16</b></h1>
+            <p>
+              <b>Bạn hay...</b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q16-1" class="q-a">
+              <p>Lên kế hoạch rõ ràng cho mọi thứ.</p>
+            </button>
+            <button id="q16-2" class="q-a">
+              <p>Ứng biến theo tình huống và thích sự linh hoạt.</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q17 -->
+        <div class="q17 q-c">
+          <div class="q-h">
+            <h1><b>17</b></h1>
+            <p>
+              <b></b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q17-1" class="q-a">
+              <p>Bạn tôn trọng và luôn cố gắng đúng giờ trong các cuộc hẹn.</p>
+            </button>
+            <button id="q17-2" class="q-a">
+              <p>Bạn không quá khắt khe về thời gian.</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q18 -->
+        <div class="q18 q-c">
+          <div class="q-h">
+            <h1><b>18</b></h1>
+            <p>
+              <b></b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q18-1" class="q-a">
+              <p>Bạn <b>không thích</b> những gì mang tính ngẫu hứng</p>
+            </button>
+            <button id="q18-2" class="q-a">
+              <p>Bạn <b>thích</b> những gì mang tính ngẫu hứng</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q19 -->
+        <div class="q19 q-c">
+          <div class="q-h">
+            <h1><b>19</b></h1>
+            <p>
+              <b></b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q19-1" class="q-a">
+              <p>
+                Bạn có xu hướng chốt vấn đề và ra quyết định chứ không để mở
+                những lựa chọn
+              </p>
+            </button>
+            <button id="q19-2" class="q-a">
+              <p>
+                Bạn thích giữ nhiều lựa chọn mở và cân nhắc kỹ lưỡng trước khi
+                đưa ra quyết định.
+              </p>
+            </button>
+          </div>
+        </div>
+        <!-- Q20 -->
+        <div class="q20 q-c">
+          <div class="q-h">
+            <h1><b>20</b></h1>
+            <p>
+              <b
+                >Bạn có danh sách cụ thể những việc cần làm và tuân theo những
+                danh sách đó một cách có kỷ luật.
+              </b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q20-1" class="q-a">
+              <p>Đúng</p>
+            </button>
+            <button id="q20-2" class="q-a">
+              <p>Sai</p>
+            </button>
+          </div>
+        </div>
+        <!-- Q21 -->
+        <div class="q21 q-c">
+          <div class="q-h">
+            <h1><b></b></h1>
+            <p>
+              <b>Giới tính của bạn:</b>
+            </p>
+          </div>
+          <div class="a-ctn">
+            <button id="q20-1" class="q-a">
+              <p>Nam</p>
+            </button>
+            <button id="q20-2" class="q-a">
+              <p>Nữ</p>
+            </button>
+            <button id="lgbt">
+              <p>LGBT</p>
+            </button>
+            <div class="eochibiti">
+              <img src="imgs/eochibiti.png" width="50%" height="50%" />
+            </div>
+          </div>
+        </div>
+
+        <div class="rs">
+          <button class="result">
+            Xem kết quả<svg
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="icon"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,47 @@
+@media (max-width: 1300px) {
+  .background {
+    padding: 50px;
+    padding-bottom: 100px;
+  }
+  .title {
+    margin-left: 20px;
+    font-size: 2.7rem;
+  }
+  .subtitle {
+    margin-left: 20px;
+  }
+  .btn {
+    height: 100%;
+  }
+  .c1 p {
+    margin: 0 20px 0 20px;
+  }
+  .c2 img {
+    width: 70%;
+  }
+  .btn {
+    margin-left: 20px;
+    margin-right: 100px;
+  }
+  footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer p {
+    margin: 0 0 0 20px;
+  }
+  .infctn {
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 70px 200px 70px;
+    gap: 50px;
+  }
+  .infttctn {
+    margin: 30px 70px 0 70px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+  }
+  .inftt {
+    font-size: 2rem;
+  }
+}

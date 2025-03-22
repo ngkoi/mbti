@@ -1,0 +1,55 @@
+@media (max-width: 550px) {
+  .background {
+    padding: 20px;
+    padding-bottom: 200px;
+    row-gap: 30px;
+    height: 45vh;
+  }
+  .title {
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    margin-left: 20px;
+    font-size: 0.7rem;
+  }
+
+  .c1 p {
+    margin: 0 20px 0 20px;
+    font-size: 0.7rem;
+  }
+  .btn p {
+    font-size: 0.7rem;
+  }
+  .c2 img {
+    width: 100%;
+  }
+  .btn {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+  footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer p {
+    margin: 0 0 0 20px;
+  }
+  .infctn {
+    grid-template-columns: 1fr;
+    margin: 30px 20px 200px 20px;
+    gap: 50px;
+  }
+  .infttctn {
+    margin: 30px 20px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+  }
+  .inftt {
+    font-size: 1rem;
+  }
+  .infttsub {
+    font-size: 1rem;
+  }
+}
