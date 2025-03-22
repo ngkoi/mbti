@@ -2,23 +2,69 @@
   * {
     font-size: 1.3rem;
   }
+  .q-ctn {
+    margin: 0 25px 100px 25px;
+    padding-top: 50px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
   .q-h {
-    font-size: 0.7rem;
-    background-color: #fed966;
-    border-radius: 20px;
-    padding: 20px 20px 1px 20px;
+    border-radius: 10px;
+    padding: 10px 10px 1px 10px;
     margin-bottom: 10px;
+  }
+  .q-h h1 {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .q-h p b {
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
   }
   .a-ctn button p {
     display: inline-block;
     margin: 0;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+  }
+  .a-ctn button {
+    height: auto;
   }
   .a-ctn button p b {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
   .eochibiti {
-    left: 35%;
-    top: -50%;
+    left: 25%;
+    top: 0;
+  }
+  .eochibiti img {
+    height: 100%;
+    width: 100%;
+  }
+  .ovl {
+    padding: 30px;
+    border-radius: 25px;
+    position: absolute;
+    background-color: white;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  }
+  .ovl-c li {
+    font-size: 0.6rem;
+  }
+  .ovl-c li b {
+    font-size: 0.6rem;
+  }
+  .ovl-c ul {
+    padding-left: 10px;
+  }
+  .ovl-t h1 {
+    font-size: 0.7rem;
+  }
+  .btn-cfm {
+    font-size: 0.6rem;
   }
 }
