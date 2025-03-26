@@ -153,3 +153,11 @@ body {
     left: 100%;
   }
 }
+.eochibiti {
+  left: 30%;
+  top: -100%;
+}
+.eochibiti img {
+  height: 50%;
+  width: 50%;
+}
