@@ -127,3 +127,7 @@ footer p {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+.github-link {
+  margin-left: 30px;
+  text-decoration: none;
+}

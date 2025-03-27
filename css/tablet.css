@@ -30,6 +30,9 @@
   footer p {
     margin: 0 0 0 20px;
   }
+  footer a {
+    margin: 0 0 0 20px;
+  }
   .infctn {
     grid-template-columns: 1fr 1fr;
     margin: 30px 70px 200px 70px;

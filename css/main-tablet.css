@@ -1,6 +1,6 @@
 @media (max-width: 1300px) {
   .q-ctn {
-    margin: 0 100px 100px 100px;
+    margin: 0 100px 30px 100px;
     padding-top: 50px;
     grid-template-columns: 1fr;
     gap: 20px;

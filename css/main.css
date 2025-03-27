@@ -38,7 +38,7 @@ body {
 }
 .q-ctn {
   position: relative;
-  margin: 0 200px 100px 200px;
+  margin: 0 200px 30px 200px;
   padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr;
@@ -125,7 +125,7 @@ body {
 }
 
 .result::before {
-  content: "";
+  content: var (--pseudo-text);
   position: absolute;
   width: 100px;
   height: 100%;
@@ -153,11 +153,10 @@ body {
     left: 100%;
   }
 }
-.eochibiti {
-  left: 30%;
-  top: -100%;
+
+.mbti-rs-ctn {
+  margin: 75px 200px 100px 200px;
 }
-.eochibiti img {
-  height: 50%;
-  width: 50%;
+.mbti-rs-ctn h1 {
+  font-weight: bold;
 }
